@@ -21,10 +21,13 @@ data
 pd.read_csv("gasolina.csv")
 print(data)
 plt.figure(figsize=(8,6))
-sns.set_theme(style="darkgrid")
+sns.set_theme(style="whitegrid")
 sns.lineplot(data=data,
 x='dia',
 y='venda',
-color='red')
+color='blue')
+plt.title('Vendas
+por
+dia')
 plt.savefig('gasolina.png',
 format='png')
